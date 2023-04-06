@@ -1,15 +1,30 @@
 # Est-RSP
 
-## introduce
+## 概要
 
-This repogitry is codes of estimate RSP.
+ジャンケンをカメラ前でタイミングを合わせて行うと勝つ手を予想してくれるアプリ
 
-## How to use
+## 使用
+- Python3
+- cv2
+- Pytorch
+- torchvision
+- matplotlib
 
-after proper library.
+## 使い方(How to use)
 
 ```
 cd $THIS_repogitry
 python3 movie.py
-
 ```
+
+## 機能
+
+表示される画面に3,2,1と数字が表示されるので合わせて画面に手が映る様にジャンケンをすると勝つ手が現れる
+
+
+## 既存の研究を考慮した点
+
+既存の研究にハイスピードカメラを用いてぎりぎりの手を見る、つまり究極の後出しをすることによって勝つ手を表示する研究が存在する。
+
+その為今回は方針を変え、手を出す1秒付近の手を見ることによって推定を行い完全な予測を行おうとした。
